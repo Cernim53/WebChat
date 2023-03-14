@@ -1,0 +1,47 @@
+{
+  "name": "webchat",
+  "version": "1.0.0",
+  "description": "web chat with socket.io and vue ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node server.js",
+    "dev-vue": "concurrently \"npm run start\" \"npm run serve --prefix vue-client\"",
+    "dev-react": "concurrently \"npm run start\" \"npm start --prefix react-client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RikLakhe/socket_webchat.git"
+  },
+  "keywords": [
+    "socket.io",
+    "veu",
+    "web",
+    "webchat",
+    "chat"
+  ],
+  "author": "Rikesh Lal Shrestha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RikLakhe/socket_webchat/issues"
+  },
+  "homepage": "https://github.com/RikLakhe/socket_webchat#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.2",
+    "npm": "^6.11.3",
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "vue": "^2.6.10"
+  }
+}
